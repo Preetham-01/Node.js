@@ -1,0 +1,34 @@
+In Node.js, the path module is a core module that provides utilities for working with file and directory paths. You don’t need to install it separately — just require it directly in your project.
+
+How to use the path module : const path = require('path');
+
+Common methods in the path module:
+
+path.basename(path)
+Returns the last portion of a path (the file or directory name).
+console.log(path.basename('/home/user/file.txt')); // file.txt
+
+path.dirname(path)
+Returns the directory part of the path.
+console.log(path.dirname('/home/user/file.txt')); // /home/user
+
+path.extname(path)
+Returns the file extension of a path.
+console.log(path.extname('/home/user/file.txt')); // .txt
+
+path.join([...paths])
+Joins multiple path segments into one path, normalizing the result.
+console.log(path.join('/home', 'user', 'docs', '..', 'file.txt')); // /home/user/file.txt
+
+path.parse(path)
+Returns an object with details about the path.
+console.log(path.parse('/home/user/file.txt'));
+/*
+{
+  root: '/',
+  dir: '/home/user',
+  base: 'file.txt',
+  ext: '.txt',
+  name: 'file'
+}
+*/
