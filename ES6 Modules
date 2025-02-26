@@ -1,0 +1,37 @@
+In Node.js, ES6 modules (ECMAScript modules or ESM) allow you to use import and export statements.
+
+Enabling ES6 modules in Node.js :
+By default, Node.js uses CommonJS (require, module.exports). 
+
+To use ES6 modules, we have two options:
+
+Use .mjs extension:
+Files with the .mjs extension are treated as ES6 modules.
+
+Set "type": "module" in package.json:
+This lets us to use ES6 modules with .js files.
+
+Importing & Exporting
+
+Named :  
+
+utils.js // file name
+export const add = (a, b) => a + b;
+export const subtract = (a, b) => a - b;
+
+main.js 
+import { add, subtract } from './utils.js';
+console.log(add(2, 3)); // 5
+console.log(subtract(5, 2)); // 3
+
+
+Default :
+
+math.js 
+export default function multiply(a, b) {
+  return a * b;
+}
+
+main.js
+import multiply from './math.js';
+console.log(multiply(3, 4)); // 12
