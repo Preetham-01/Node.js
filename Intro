@@ -1,0 +1,17 @@
+Node.js is a free open-source, Cross platform, JavaScript run-time environment.
+That lets users write command line tools and server-side scripts outside of a browser. 
+
+Open-source : Node.js has a huge commmunity of collaborators who work consistently on keeping Node.js feature-rich and up-to-date.
+Cross-platform : Node.js code can run on any operating system like: windows, macOS, or linux.
+Runtime environment : Node.js is built on Google Chrome's V8 engine which allows JavaScript to run outside the browser.
+
+Run command : node filename // shows output
+Node.js files have extension ".js"
+
+ VS Code Extension : Code runner // This extension helps us to run the file easily
+            F1 -> Open keyboard Shortcut -> Code runner (Run Code) // double click on it, set shortcut to run
+
+Node.js Version Check : node -v | node --version // shows installed version
+npm Version Check : npm -v | npm --version
+
+Ref : https://www.w3schools.com/nodejs/nodejs_intro.asp
