@@ -1,0 +1,16 @@
+In Node.js, every file (module) is wrapped inside a special "module wrapper function" before execution.
+This wrapper provides encapsulation — meaning variables, functions, etc., defined in a file don't pollute the global scope.
+
+When you write a simple Node.js file like this:
+console.log('Hello, Preetham!');
+
+Behind the scenes, Node.js wraps it like this: // Module Wrapper
+(function(exports, require, module, __filename, __dirname) {
+  console.log('Hello, Preetham!');
+});
+
+exports — A shortcut to export objects or functions from a module.
+require — A function to import other modules.
+module  — A reference to the current module, allowing more control over exports.
+__filename — The absolute path of the current file.
+__dirname — The absolute path of the directory containing the file.
