@@ -1,0 +1,17 @@
+R: Read — Reads user input.
+E: Evaluate — Executes the code.
+P: Print — Outputs the result.
+L: Loop — Waits for the next input.
+
+How to use Node.js REPL: Open terminal enter "node"
+
+> 2 + 3
+5
+
+> const greet = (name) => `Hello, ${name}`;
+undefined
+
+> greet('Mahesh')
+'Hello, Mahesh' // output
+
+.exit : Exit the REPL
