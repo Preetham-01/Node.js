@@ -1,0 +1,8 @@
+In Node.js, modules are reusable blocks of code that encapsulate related functionalities. 
+Each file in Node.js is a module, and Node uses CommonJS module system by default.
+
+There are 3 main types of modules:
+
+Core Modules (built-in): Provided by Node.js, like fs, http, path.
+Local Modules (user-defined): Custom modules created by you.
+Third-party Modules: Installed using npm (Node Package Manager), like express, mongoose.
