@@ -1,0 +1,84 @@
+The File System (fs) module in Node.js allows you to work with the file system on your computer — reading, writing, updating, deleting, and more. 
+It’s a core module, so you don’t need to install it — you just require it:
+
+FS module : 
+   1. Promise API
+   2. Callback API
+   3. Sync API
+
+const fs = require('fs'); | import * as fs from "fs";
+
+Common methods in the fs module:
+
+1. Reading Files
+
+Synchronous (blocking):  // Sync API
+const data = fs.readFileSync('example.txt', 'utf8');
+console.log(data);
+
+Asynchronous (non-blocking): // Callback API
+fs.readFile('example.txt', 'utf8', (err, data) => {
+  if (err) throw err;
+  console.log(data);
+});
+
+2. Writing Files
+
+Synchronous: // Sync API
+fs.writeFileSync('example.txt', 'Hello World!');
+
+Asynchronous: // Callback API
+fs.writeFile('example.txt', 'Hello World!', (err) => {
+  if (err) throw err;
+  console.log('File written successfully.');
+});
+
+3. Appending Files
+
+Synchronous: // Sync API
+fs.appendFileSync('example.txt', '\nAppended text.');
+
+Asynchronous: // Callback API
+fs.appendFile('example.txt', '\nAppended text.', (err) => {
+  if (err) throw err;
+  console.log('Text appended.');
+});
+
+4. Deleting Files
+
+Synchronous: // Sync API
+fs.unlinkSync('example.txt');
+
+Asynchronous: // Callback API
+fs.unlink('example.txt', (err) => {
+  if (err) throw err;
+  console.log('File deleted.');
+});
+
+5. Checking if a File Exists 
+// Callback API
+fs.access('example.txt', fs.constants.F_OK, (err) => {
+  console.log(err ? 'File does not exist' : 'File exists');
+});
+
+6. Creating Directories
+
+Synchronous: // Sync API
+fs.mkdirSync('new-folder');
+
+Asynchronous: // Callback API
+fs.mkdir('new-folder', (err) => {
+  if (err) throw err;
+  console.log('Folder created.');
+});
+
+7. Reading Directories 
+// Callback API
+fs.readdir('./', (err, files) => {
+  if (err) throw err;
+  console.log(files);
+});
+
+
+Ref : https://nodejs.org/docs/latest/api/fs.html
+      https://www.w3schools.com/nodejs/nodejs_filesystem.asp
