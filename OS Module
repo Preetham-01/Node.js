@@ -1,0 +1,37 @@
+The OS module in Node.js provides methods to interact with the operating system
+Getting info about the system, user, memory, etc. It’s a core module.
+
+Just require it like this:
+const os = require('os');
+
+System Information:
+
+1. Get OS Platform:
+Returns the operating system platform (like 'win32', 'linux', 'darwin').
+console.log('Platform:', os.platform());
+
+2. Get OS Type:
+Returns the OS name (like 'Windows_NT', 'Linux', 'Darwin').
+console.log('OS Type:', os.type());
+
+3. Get Architecture:
+Returns CPU architecture ('x64', 'arm', etc.).
+console.log('CPU Architecture:', os.arch());
+
+CPU and Memory:
+
+4. CPU Information:
+Returns an array of objects containing info about each CPU/core.
+console.log('CPU Info:', os.cpus());
+console.log('Number of Cores:', os.cpus().length);
+
+5. Free Memory:
+Returns the amount of free system memory in bytes.
+console.log('Free Memory (bytes):', os.freemem());
+console.log('Free Memory (MB):', os.freemem() / (1024 * 1024));
+
+6. Total Memory:
+Returns the total system memory in bytes.
+console.log('Total Memory (MB):', os.totalmem() / (1024 * 1024));
+
+Ref: https://nodejs.org/docs/latest/api/os.html
