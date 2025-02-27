@@ -1,0 +1,19 @@
+The URL module in Node.js helps you work with and parse URLs easily 
+extracting parts like protocol, hostname, pathname, query parameters, etc.It’s a core module.
+
+const url = require('url');
+
+Creating and Parsing URLs :
+
+1. Parsing a URL: Use new URL() to parse a URL string:
+
+const myUrl = new URL('https://example.com:8080/path/name?search=query&sort=asc#section1');
+
+console.log('Href:', myUrl.href);           // Full URL
+console.log('Protocol:', myUrl.protocol);   // 'https:'
+console.log('Host:', myUrl.host);           // 'example.com:8080'
+console.log('Hostname:', myUrl.hostname);   // 'example.com'
+console.log('Port:', myUrl.port);           // '8080'
+console.log('Pathname:', myUrl.pathname);   // '/path/name'
+console.log('Search:', myUrl.search);       // '?search=query&sort=asc'
+console.log('Hash:', myUrl.hash);           // '#section1'
