@@ -3,6 +3,7 @@ E: Evaluate — Executes the code.
 P: Print — Outputs the result.
 L: Loop — Waits for the next input.
 
+
 How to use Node.js REPL: Open terminal enter "node"
 
 > 2 + 3
