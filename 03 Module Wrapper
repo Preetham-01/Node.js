@@ -4,7 +4,8 @@ This wrapper provides encapsulation — meaning variables, functions, etc., defi
 When you write a simple Node.js file like this:
 console.log('Hello, Preetham!');
 
-Behind the scenes, Node.js wraps it like this: // Module Wrapper
+Behind the scenes, Node.js wraps it like this: // Module Wrapper : 
+
 (function(exports, require, module, __filename, __dirname) {
   console.log('Hello, Preetham!');
 });
