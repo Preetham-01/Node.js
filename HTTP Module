@@ -1,0 +1,18 @@
+In Node.js, the built-in HTTP module allows you to create web servers, send HTTP requests, and handle network communication.
+It’s a core module.
+
+HTTP server example:
+
+// Import the HTTP module
+const http = require('http');
+
+// Create an HTTP server
+const server = http.createServer((req, res) => {
+  res.writeHead(200, { 'Content-Type': 'text/plain' }); // Set response header
+  res.end('Hello, World!'); // Send response body
+});
+
+// Server listens on port 3000
+server.listen(3000, () => {
+  console.log('Server running at http://localhost:3000/');
+});
