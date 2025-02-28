@@ -1,0 +1,11 @@
+Node.js Architecture Overview:
+
+Node.js is built on:
+
+V8 Engine — Google's high-performance JavaScript engine (the same one in Chrome)
+libuv — A C library for handling asynchronous I/O operations (file system, network, etc.)
+Event loop — Manages non-blocking I/O operations
+C++ bindings — To interact with system-level APIs
+
+Flow:
+JavaScript (written by you) ➡️ V8 Engine ➡️ Libuv ➡️ System calls (OS)
