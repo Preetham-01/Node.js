@@ -1,0 +1,18 @@
+NPM (Node Package Manager) is the default package manager for Node.js. It helps in: 
+
+Install libraries and packages 
+Manage project dependencies 
+Run scripts and automation tasks 
+Publish your own packages
+
+Command	Description:
+
+npm init	Initialize a new project
+npm install	Install all dependencies from package.json
+npm install <pkg>	Install a specific package
+npm install -g <pkg>	Install a package globally
+npm uninstall <pkg>	Remove a package
+npm update	Update packages to latest versions
+npm outdated	Check for outdated dependencies
+npm run <script>	Run a script defined in package.json
+npm list	List installed packages
